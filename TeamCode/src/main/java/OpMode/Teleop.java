@@ -1,13 +1,11 @@
 package OpMode;
 
-import com.qualcomm.hardware.rev.RevHubOrientationOnRobot;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.IMU;
-import Subsystems.DriveTrain;
-import Subsystems.Intake;
-import Subsystems.Shooter;
+import Subsystem.DriveTrain;
+import Subsystem.Intake;
+import Subsystem.Shooter;
 
 /*
  * This OpMode illustrates how to program your robot to drive field relative.  This means
@@ -47,8 +45,6 @@ public class Teleop extends OpMode {
         telemetry.addLine("Hold left bumper to drive in robot relative");
         telemetry.addLine("The left joystick sets the robot direction");
         telemetry.addLine("Moving the right joystick left and right turns the robot");
-        telemetry.addLine("Speed of Intake: " + s_intake.intakeSpeed);
-        //telemetry.addLine("Speed of Shooter: " + s_shooter.shooterSpeed); uncomment when shooter is made
 
         // If you press the A button, then you reset the Yaw to be zero from the way
         // the robot is currently pointing

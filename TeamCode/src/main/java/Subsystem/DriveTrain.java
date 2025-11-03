@@ -1,4 +1,4 @@
-package Subsystems;
+package Subsystem;
 
 import static org.firstinspires.ftc.robotcore.external.BlocksOpModeCompanion.hardwareMap;
 
